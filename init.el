@@ -55,4 +55,7 @@
     (set-char-table-range composition-function-table (car char-regexp)
                           `([,(cdr char-regexp) 0 font-shape-gstring]))))
 
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 160)
+
+;; Set the default directory
+(setq default-directory "~/")
