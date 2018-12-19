@@ -70,4 +70,4 @@
 ;; access these with C-x r j <key>
 (set-register ?i '(file . "~/.emacs.d/init.el"))
 (set-register ?c '(file . "~/Dropbox/Projects/clojure/clojure-cheatsheet.txt"))
-(set-register ?e '(file . "~/Dropbox/Projects/emacs-notes.txt"))
+(set-register ?e '(file . "~/Dropbox/Projects/emacs.notes"))
