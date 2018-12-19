@@ -55,7 +55,19 @@
     (set-char-table-range composition-function-table (car char-regexp)
                           `([,(cdr char-regexp) 0 font-shape-gstring]))))
 
-(set-face-attribute 'default nil :height 160)
+(set-face-attribute 'default nil :height 140)
 
 ;; Set the default directory
-(setq default-directory "~/")
+(setq default-directory "~")
+
+;; magit
+(global-set-key (kbd "C-x g") 'magit-status)
+
+;; Allow hash to be entered  
+(global-set-key (kbd "M-3") '(lambda () (interactive) (insert "#")))
+
+;; set registers for commonly accessed files
+;; access these with C-x r j <key>
+(set-register ?i '(file . "~/.emacs.d/init.el"))
+(set-register ?c '(file . "~/Dropbox/Projects/clojure/clojure-cheatsheet.txt"))
+(set-register ?e '(file . "~/Dropbox/Projects/emacs-notes.txt"))
