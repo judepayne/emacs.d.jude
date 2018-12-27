@@ -71,3 +71,7 @@
 (set-register ?i '(file . "~/.emacs.d/init.el"))
 (set-register ?c '(file . "~/Dropbox/Projects/clojure/clojure-cheatsheet.txt"))
 (set-register ?e '(file . "~/Dropbox/Projects/emacs.notes"))
+
+
+;; Don't pop up a Cider erro buffer - show errors in repl
+(setq cider-show-error-buffer '(only-in-repl))
